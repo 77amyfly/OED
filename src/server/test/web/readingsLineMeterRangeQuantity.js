@@ -171,7 +171,7 @@ mocha.describe('readings API', () => {
 								unitDatakWh.concat([
 									{
 										name: 'MJ',
-										identifier: '',
+										identifier: 'megaJoules',
 										unitRepresent: Unit.unitRepresentType.QUANTITY,
 										secInRate: 3600,
 										typeOfUnit: Unit.unitType.UNIT,
@@ -186,7 +186,7 @@ mocha.describe('readings API', () => {
 									{
 										sourceName: 'kWh',
 										destinationName: 'MJ',
-										bidirectional: false, 
+										bidirectional: true, 
 										slope: 3.6,
 										intercept: 0,
 										note: 'kWh → MJ'
